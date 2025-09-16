@@ -22,13 +22,9 @@ jobs:
       - name: Build
         run: just build-all
 
-      - name: Create Release
-        uses: softprops/action-gh-release@v2
+      - name: Update release
+        uses: johnwbyrd/update-release@v1
         with:
-          files: |
-            cv_en.pdf
-            cv_ru.pdf
-          name: "Release ${{ github.ref_name }}"
-          body: "Compiled pdfs of CV rev. ${{ github.ref_name }}."
-          draft: false
-          prerelease: false
+          token: ${{ secrets.GITHUB_TOKEN }}
+          files: ./cv_en.pdf ./cv_ru.pdf
+          tag: ${{ github.ref_name }}
