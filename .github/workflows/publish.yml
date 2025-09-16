@@ -22,9 +22,10 @@ jobs:
       - name: Build
         run: just build-all
 
+      - name: Debug
+        run: echo "Updating release ${{ github.ref_name }}"
+
       - name: Update release
-        uses: johnwbyrd/update-release@v1.0.0
-        with:
-          token: ${{ secrets.GITHUB_TOKEN }}
-          files: ./cv_en.pdf ./cv_ru.pdf
-          tag: ${{ github.ref_name }}
+        run: gh release upload ${{ github.ref_name }} cv_en.pdf cv_ru.pdf
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
