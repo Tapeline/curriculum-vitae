@@ -19,8 +19,7 @@ jobs:
 
       - uses: extractions/setup-just@v3
 
-      - name: Install dependencies
-        run: apt-get install typst
+      - uses: typst-community/setup-typst@v4
 
       - name: Test build
         run: just build-all
