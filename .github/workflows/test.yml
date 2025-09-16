@@ -1,0 +1,26 @@
+name: Test
+
+on:
+  push:
+    branches: ["master"]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  id-token: write
+
+jobs:
+  test-build:
+    runs-on: ubuntu-latest
+    outputs:
+      artifact: ${{ steps.define-ids.outputs.artifact }}
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: extractions/setup-just@v3
+
+      - name: Install dependencies
+        run: apt-get install typst
+
+      - name: Test build
+        run: just build-all
