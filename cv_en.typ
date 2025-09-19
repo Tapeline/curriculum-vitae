@@ -23,12 +23,20 @@
 )
 
 #resume_item[
-  - Developed services and internal libraries to simplify asynchronous communication between services,
-    including the creation of an internal protocol for this purpose;
-  - Actively integrated linters (ruff, mypy, wemake-python-styleguide, import-linter);
-  - Initiated the creation of and authored enterprise documentation (covering domain description, services,
-    internal libraries, onboarding, and guidelines);
-  - Configured GitLab CI pipelines for testing and building (packages and Docker images);
+  - Joined a team that lacked a unified code style and documentation,
+    which slowed down development and onboarding.
+  - Initiated and implemented a single standard for static analysis
+    and code style for all services (ruff, mypy, wemake-python-styleguide)
+    and a unified logging standard.
+  - Created a knowledge base: documented existing services (using the C4 model),
+    described the business domain, and developed onboarding guides.
+  - Wrote guidelines for the team's work processes: task lifecycle, code review,
+    test writing, and using AI for code generation.
+  - Improved code quality and maintainability, accelerated the onboarding of
+    new employees, and made development processes more transparent.
+  - Developed services and internal libraries to simplify asynchronous
+    communication between services, and developed an internal high-level protocol for it.
+  - Configured GitLab CI pipelines for testing and building (packages and Docker images).
 ]
 
 #resume_section("Personal Projects")
@@ -69,18 +77,22 @@
 #resume_item[
   - cpython:
     Fixed bugs related to specialization and corrected inaccurate documentation.
+
     #link("https://github.com/python/cpython/")[#"github.com/python/cpython"]
 
   - dishka:
     Refactored code and clarified documentation.
+
     #link("https://github.com/reagento/dishka/")[#"github.com/reagento/dishka"]
 
   - wemake-python-styleguide:
     Fixed bugs, added a CLI utility to view rule descriptions, and implemented new linter rules.
+
     #link("https://github.com/wemake-services/wemake-python-styleguide/")[#"github.com/wemake-services/wemake-python-styleguide"]
 
   - faststream:
     Refactored the AsyncAPI specification generator.
+
     #link("https://github.com/ag2ai/faststream/")[#"github.com/ag2ai/faststream"]
 ]
 
@@ -109,4 +121,9 @@
 #skill_item(
   "Other",
   other_skills
+)
+
+#skill_item(
+  "Languages",
+  ("Russian ― Native", "English ― B2-C1")
 )
