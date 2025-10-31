@@ -23,20 +23,20 @@
 )
 
 #resume_item[
-  - Joined a team that lacked a unified code style and documentation,
-    which slowed down development and onboarding.
   - Initiated and implemented a single standard for static analysis
     and code style for all services (ruff, mypy, wemake-python-styleguide)
-    and a unified logging standard.
-  - Created a knowledge base: documented existing services (using the C4 model),
-    described the business domain, and developed onboarding guides.
-  - Wrote guidelines for the team's work processes: task lifecycle, code review,
-    test writing, and using AI for code generation.
-  - Improved code quality and maintainability, accelerated the onboarding of
-    new employees, and made development processes more transparent.
+    and a unified logging standard. As a result, increased codebase quality
+    and maintainability.
+
+  - Systematized team processes and knowledge by creating a centralized
+    knowledge base with domain description, architectural diagrams,
+    onboarding guides and guidelines regarding key processes (task lifecycle,
+    code review, test writing, AI usage). As a result, simplified onboarding
+    of new employees and and made development processes more transparent.
+
   - Developed services and internal libraries to simplify asynchronous
     communication between services, and developed an internal high-level protocol for it.
-  - Configured GitLab CI pipelines for testing and building (packages and Docker images).
+    Configured GitLab CI pipelines for testing and building (packages and Docker images).
 ]
 
 #resume_section("Personal Projects")
