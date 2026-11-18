@@ -13,9 +13,9 @@
         #box[#link("mailto:mail@tapeline.dev")[#"mail@tapeline.dev"]]
         #separator
         #github_icon
-        #box[#link("https://github.com/Tapeline")[#"Tapeline"]]
+        #box[#link("https://github.com/Tapeline")[#"github.com/Tapeline"]]
         #separator
-        #box[#link("https://habr.com/users/tapeline/")[#"Habr: tapeline"]]
+        #box[#link("https://habr.com/users/tapeline/")[#"habr.com/users/tapeline"]]
       ]
     ]
   ]
