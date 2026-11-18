@@ -1,13 +1,13 @@
 #let lang_skills = (
-  "Python", "C", "Java"
+  "Python", "Java", "Kotlin", "C",  "Scala", "Go"
 )
 
 #let lib_skills = (
-  "Litestar", "FastAPI", "Django (DRF)", "Faststream", "dishka"
+  "Spring", "FastAPI", "DRF", "Faststream", "dishka", "Swing"
 )
 
 #let infra_skills = (
-  "Docker (+Compose)", "Nginx", "Grafana", "NATS", "RabbitMQ", "Minio", "Postgres"
+  "Docker (+Compose)", "Nginx", "Grafana", "Kafka", "RabbitMQ", "Minio", "Postgres", "Clickhouse", "Redis"
 )
 
 #let tool_skills = (
